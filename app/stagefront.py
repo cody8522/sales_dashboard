@@ -44,6 +44,7 @@ with st.sidebar.form(key = 'my_form'):
     submit_button = st.form_submit_button(label = 'Submit')
 
 if submit_button:
+    @st.experimental_memo(suppress_st_warning = True)
     def submit_pressed():
         url_temp = 'https://portal.stagefront.com/api/Marketplace/SeatGeek/Event/{}/Sales'
         url = url_temp.format(sg_id)
