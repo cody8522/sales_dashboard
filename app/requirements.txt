@@ -1,5 +1,6 @@
 requests
 urllib3
-pandas
+pandas>1.2
 altair
 streamlit
+streamlit-aggrid
