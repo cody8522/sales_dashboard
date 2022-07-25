@@ -1,6 +1,5 @@
 requests
 urllib3
 pandas
-warnings
 altair
 streamlit
