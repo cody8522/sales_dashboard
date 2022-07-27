@@ -50,7 +50,6 @@ if submit_button:
     url = url_temp.format(sg_id)
 
     response = requests.get(url, cookies=cookies, headers=headers, verify = False)
-    st.write(response)
     data = response.json()
     event = data['Event']
     sales = data['Sales']
