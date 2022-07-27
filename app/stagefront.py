@@ -46,57 +46,53 @@ with st.sidebar.form(key = 'my_form'):
     submit_button = st.form_submit_button(label = 'Submit')
 
 if submit_button:
-    @st.experimental_memo(suppress_st_warning = True)
-    def submit_pressed():
-        url_temp = 'https://portal.stagefront.com/api/Marketplace/SeatGeek/Event/{}/Sales'
-        url = url_temp.format(sg_id)
+    url_temp = 'https://portal.stagefront.com/api/Marketplace/SeatGeek/Event/{}/Sales'
+    url = url_temp.format(sg_id)
 
-        response = requests.get(url, cookies=cookies, headers=headers, verify = False)
-        st.write(response)
-        data = response.json()
-        event = data['Event']
-        sales = data['Sales']
+    response = requests.get(url, cookies=cookies, headers=headers, verify = False)
+    st.write(response)
+    data = response.json()
+    event = data['Event']
+    sales = data['Sales']
 
-        #Event Information
+    #Event Information
 
-        event_df = pd.json_normalize(event)
-        event_df2 = event_df['datetime_utc'].str.split("T", 1, expand = True)
+    event_df = pd.json_normalize(event)
+    event_df2 = event_df['datetime_utc'].str.split("T", 1, expand = True)
 
-        Artist = event_df["Name"].values[0] + "  -  " +  event_df["Venue.Name"].values[0]
-        Venue_City = event_df["Venue.City"].values[0]
-        Venue_State = event_df["Venue.State"].values[0]
-        Event_Datetime = event_df2[0].values[0]
+    Artist = event_df["Name"].values[0] + "  -  " +  event_df["Venue.Name"].values[0]
+    Venue_City = event_df["Venue.City"].values[0]
+    Venue_State = event_df["Venue.State"].values[0]
+    Event_Datetime = event_df2[0].values[0]
 
-        st.header(Artist)
-        st.write(Venue_City, ",", Venue_State)
-        st.write(Event_Datetime)
+    st.header(Artist)
+    st.write(Venue_City, ",", Venue_State)
+    st.write(Event_Datetime)
 
 
-        #Sales Information
-        sales_df = pd.json_normalize(sales)
+    #Sales Information
+    sales_df = pd.json_normalize(sales)
 
-        sales_df2 = sales_df[['putc', 'bp', 'q' ,'s', 'r']]
+    sales_df2 = sales_df[['putc', 'bp', 'q' ,'s', 'r']]
 
-        df = sales_df2['putc'].str.split("-",2, expand=True)
+    df = sales_df2['putc'].str.split("-",2, expand=True)
 
-        df2 = df[2].str.split("T", 1, expand = True)
-
-
-        sales_df2['Year'] = df[0]
-        sales_df2['Month'] = df[1]
-        sales_df2['Day'] = df2[0]
-        sales_df2['Time'] = df2[1]
-        sales_df2.drop(columns = ["putc"], inplace = True)
-
-        df_rename = sales_df2.rename(columns = {'bp':'Price', 'q' : 'Qty', 's' : 'Sec', 'r' : 'Row'})
-
-        final_df = df_rename[['Year', 'Month', 'Day', 'Time', 'Price', 'Qty', 'Sec', 'Row']]
-        final_df = final_df.sort_values(by=['Year', 'Month','Day', 'Time'])
+    df2 = df[2].str.split("T", 1, expand = True)
 
 
-        final_df['date_string'] = final_df['Year'].astype(str) + "-" + final_df['Month'].astype(str)+ "-" +  final_df['Day'].astype(str)
-        return final_df
-    final_df = submit_pressed()
+    sales_df2['Year'] = df[0]
+    sales_df2['Month'] = df[1]
+    sales_df2['Day'] = df2[0]
+    sales_df2['Time'] = df2[1]
+    sales_df2.drop(columns = ["putc"], inplace = True)
+
+    df_rename = sales_df2.rename(columns = {'bp':'Price', 'q' : 'Qty', 's' : 'Sec', 'r' : 'Row'})
+
+    final_df = df_rename[['Year', 'Month', 'Day', 'Time', 'Price', 'Qty', 'Sec', 'Row']]
+    final_df = final_df.sort_values(by=['Year', 'Month','Day', 'Time'])
+
+
+    final_df['date_string'] = final_df['Year'].astype(str) + "-" + final_df['Month'].astype(str)+ "-" +  final_df['Day'].astype(str)    
 
     ##volume chart
     v_scale = [0, max(final_df['Qty']) + 5]
@@ -121,7 +117,7 @@ if submit_button:
     with col2:
         st.header("Volume over Time")
         st.altair_chart(volume_chart, use_container_width=True)
-
+    
     #AgGrid Chart
     st.subheader("Sales History")
     AgGrid(final_df.sort_values(by = ['Year','Month','Day','Time'],
