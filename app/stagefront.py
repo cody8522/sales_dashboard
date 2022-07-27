@@ -41,12 +41,13 @@ st.sidebar.image("https://i.imgur.com/YiHfDnR.png", width = 150)
 st.title(" Seatgeek Sales Dashboard")
 
 with st.sidebar.form(key = 'my_form'):
-    sg_id = st.text_input(label= 'SeatGeek ID')
+    sg_url = st.text_input(label= 'SeatGeek URL')
     submit_button = st.form_submit_button(label = 'Submit')
 
 if submit_button:
     @st.experimental_memo(suppress_st_warning = True)
     def submit_pressed():
+        sg_id = sg_url[-7:]
         url_temp = 'https://portal.stagefront.com/api/Marketplace/SeatGeek/Event/{}/Sales'
         url = url_temp.format(sg_id)
 
