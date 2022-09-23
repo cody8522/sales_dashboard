@@ -10,30 +10,29 @@ urllib3.disable_warnings()
 warnings.filterwarnings('ignore')
 
 cookies = {
-    '__RequestVerificationToken': 'zdhBRcbzP2gCA5DUuolrWb4yP6DFQyEHjNzEOsFLpkA2TXR28smtt9K0pG782iZOPfq5Eta_ZoYy7jRpZDvPo85QdKJUWORj4-iuZhZ-uy41',
-    '_lr_uf_-4olzxu': 'd1628cfb-394a-44dd-8cb7-5c814eb9c41a',
-    'ASP.NET_SessionId': 'aswpylnpeyxxbdph45zpzfpf',
-    '_lr_tabs_-4olzxu%2Fconsignment-portal-beta': '{%22sessionID%22:0%2C%22recordingID%22:%225-f058e182-86f0-4cc2-a4be-e329ee102a5a%22%2C%22lastActivity%22:1662665285934}',
-    '_lr_hb_-4olzxu%2Fconsignment-portal-beta': '{%22heartbeat%22:1662665285935}',
-    '.AspNet.ApplicationCookie': 'N21CEDE9YxEh7iVAzSG6-VXYSFpMFpHdm6d8Oi93uasfMZ6OznYn5ak4R8kMwnVVtMTHLWPHXi6QpnBQ08QPiVp0Kg0_AoDo7Mr3NNZTSiPOXNnTkzp1nS11akH-lBmw5QvXNM775ZnB8a46Qoswsbitg8Bh0Ss62vJXvM_LtbEAgUT_myObZQqDuhQySZNqWJkKcsVTXg9_w_nLJl_1aTce1UZDS-BeEraA6PyHpdh2ntRzV_-UgMR2jOMqUMj6ndspfGjKnXRX8CBI5a748sEZykjhdm3l-MBLTK81VDmmiNVcQCVn-PF1Y8ZGiMaDD5sGKbxRI_Fp9ziFM_W8lxFfANJNtuPbhl44BG9qAIgcmMVPwSJ0ge_M1qzsL8DSXiXTAEZCUn9d-BIgj31f531FfkEPKttCNesxYDomGYAx9WML9btLxs-PcZq7HOe7jWgwCDFOijIna2oaKmerMtVgOLK6qdQNT7cHpUGLPMbzsERiHWwzYl1FNodR94L7tF6YdbsVQodo9zulg-h9MeSbB1u18I_77_Yivu-IN3ZfZqGLODvDyxM_JFZr8Rx_YBXcNRP-sgJHc2aFmy7BO9aIi1RlmVbxcI85xwB-s36H-EmLAD9cjloVA2moPE1HBpTqdaJi8dwtV4271xUYWVR7s7yxEE3onenp9qnGK9WFqacrYFBb-I9Rlk-VJ0jFaempYa1H11D85cppnsZsX8FXw-1LR2gQkxrgayboBTeADOrLBNW-re052IhHd0wRgtW8WrOkBwRHM-SqywMb4sp1K7AL8koYt03iha_U1kWytnDSAM7VO2y1O9JOBBxUXEAOHpsBTmP1LqFVUjgeP891YgWSRsLkyi1PByTNLpIqMkeBKD2FNrjpnHRo2wKy5N7VSPf2ZKVcbyc5zAe3HrFmlWbJuv8U0sihysWRlrDgXx6yVy8ZaoRv8OceWsSU6ag5sRdwwvfTqa4Rb1k1mCz8Qm-AsuDHB7PKkK2Cp2CfMT8tN88rr60PRy6QVCXTAMtCeHcwMV1_tESGoTJTyXkU47sjN5vUlNKZLxBrktldE9rwBgFIzGskWH0XZJQMzx5WhLC7cJHJbxENqcfKxzqASevPhYqHq561yUZOlX0',
+    '__RequestVerificationToken': 'YIzxYmoaPa5g4HDz9YukyAXGXWbB4Jnr8KqK_FptivM0baHzHCRfFwTOQI5UnaMw-S7EF63ooO8YVjOA50LK3DfVDF04VxNnwx70kiucip01',
+    '_lr_hb_-4olzxu%2Fconsignment-portal-beta': '{%22heartbeat%22:1663959490653}',
+    '_lr_uf_-4olzxu': '5e8d49f7-d1b2-4b6a-a1d1-dfe201807491',
+    '_lr_tabs_-4olzxu%2Fconsignment-portal-beta': '{%22sessionID%22:0%2C%22recordingID%22:%225-e7b73f7d-90d1-4854-b897-ed10517b9967%22%2C%22lastActivity%22:1663959520406}',
+    '.AspNet.ApplicationCookie': 'tTNvq1g6Vix8CIwPZsPY31WEvY0tUD0TOOfcS3CAJ3B5fTM1OXudBRVzqJDC2nXp0PpVOD5PHjTDdCxEleHiC-SH21gVCr1RhRLQKzkyka86Nhg9ovnPad-Sln4O3p7AbLFalYBOaeJabsPDTJo9t62CHenydQbjFOMyfo85BwcCDgb8rNBPK6g5q319Jt79R4QTQjILSrO-4k5tBUa84Oi-1_NCl6Uh5NjDTXNWzaFhA25v23gtxTDbFg9ysMjvYejsede4RggrJCUDQwdmWmGx7hnU43ov4vZs_0PszTSpxFVioufdzn_6Jl_fhjgA_IDQ_PDt8LHgk1Ha_qzj8_DNHg4z3VNGP8aGh976mdE0crhGRcSRPK-nJ6OuDPNVYJNWAQ3D3HV3RGI9S4l7HblHyupLUmXKCAddkW5J5I7ayLUIlrZXyojDRxlrZGy1yCm3D67llMzIZEoeQkKCL5CVoGs9YyHQWaVw53w1BrG1dCShSM0RcQmBh7VbyNJrFoZ5N0J23aO5wOaydvhEkTbjEDrhWmHo2fg9w4UArR0CPxC5trr0xi1NY-be2bt2dfLHqZQCMbKjV6nP6rBNYP6wcBfHbiNpe6YQFFWISHxc1QoNMYNRGLPTWa0ff6A1Jp-FbqUicKuwBKoM-9hAiPpSfLTLB7bZCyf0JNq6IXlVYa6cawks5YCgFWP1JNli0xkl5KIkwf7x6eAEu6Zw4J0gdrK8vNDeE1Tnxqi2kE4cVh9y-K8yCs2W15J2BZ0aDYmOm6MnPCtrkBUiUGZcV6yLiEkF7CZZ-wEGaXPyd0n3Vv8Z3J6vIAA9gHIURdFX6ugMC2CO6PepWKBI7D9aUeCE667go3bfwvwtZN0hSKZx6LOhVxgIuacMO48eeP4jmqeBrT66FFnYia9X3jK4T6k13qfyxmzo84-du0uOcY07GV_gpyKpN5v47z6Cg3IinpYpwqAAZMztI9jC930_m1yesCBw_UD84nRANh86IsDz9ST7vfCdofJltwu5POq5gmufeytTcbaSG0w0hRVH4R9HpQ9idejUeCDasyqjAaJpuX-2RxsuYvYUIUmzUjp_LdQQWM9R3qj2xVIhcn5iwMhQL-si3ngUu2KkClu2aZc',
 }
 
 headers = {
     'authority': 'portal.stagefront.com',
-    'accept': 'application/json; charset=utf-8',
+    'accept': '*/*',
     'accept-language': 'en-US,en;q=0.9',
     'content-type': 'application/json',
     # Requests sorts cookies= alphabetically
-    # 'cookie': '__RequestVerificationToken=zdhBRcbzP2gCA5DUuolrWb4yP6DFQyEHjNzEOsFLpkA2TXR28smtt9K0pG782iZOPfq5Eta_ZoYy7jRpZDvPo85QdKJUWORj4-iuZhZ-uy41; _lr_uf_-4olzxu=d1628cfb-394a-44dd-8cb7-5c814eb9c41a; ASP.NET_SessionId=aswpylnpeyxxbdph45zpzfpf; _lr_tabs_-4olzxu%2Fconsignment-portal-beta={%22sessionID%22:0%2C%22recordingID%22:%225-f058e182-86f0-4cc2-a4be-e329ee102a5a%22%2C%22lastActivity%22:1662665285934}; _lr_hb_-4olzxu%2Fconsignment-portal-beta={%22heartbeat%22:1662665285935}; .AspNet.ApplicationCookie=N21CEDE9YxEh7iVAzSG6-VXYSFpMFpHdm6d8Oi93uasfMZ6OznYn5ak4R8kMwnVVtMTHLWPHXi6QpnBQ08QPiVp0Kg0_AoDo7Mr3NNZTSiPOXNnTkzp1nS11akH-lBmw5QvXNM775ZnB8a46Qoswsbitg8Bh0Ss62vJXvM_LtbEAgUT_myObZQqDuhQySZNqWJkKcsVTXg9_w_nLJl_1aTce1UZDS-BeEraA6PyHpdh2ntRzV_-UgMR2jOMqUMj6ndspfGjKnXRX8CBI5a748sEZykjhdm3l-MBLTK81VDmmiNVcQCVn-PF1Y8ZGiMaDD5sGKbxRI_Fp9ziFM_W8lxFfANJNtuPbhl44BG9qAIgcmMVPwSJ0ge_M1qzsL8DSXiXTAEZCUn9d-BIgj31f531FfkEPKttCNesxYDomGYAx9WML9btLxs-PcZq7HOe7jWgwCDFOijIna2oaKmerMtVgOLK6qdQNT7cHpUGLPMbzsERiHWwzYl1FNodR94L7tF6YdbsVQodo9zulg-h9MeSbB1u18I_77_Yivu-IN3ZfZqGLODvDyxM_JFZr8Rx_YBXcNRP-sgJHc2aFmy7BO9aIi1RlmVbxcI85xwB-s36H-EmLAD9cjloVA2moPE1HBpTqdaJi8dwtV4271xUYWVR7s7yxEE3onenp9qnGK9WFqacrYFBb-I9Rlk-VJ0jFaempYa1H11D85cppnsZsX8FXw-1LR2gQkxrgayboBTeADOrLBNW-re052IhHd0wRgtW8WrOkBwRHM-SqywMb4sp1K7AL8koYt03iha_U1kWytnDSAM7VO2y1O9JOBBxUXEAOHpsBTmP1LqFVUjgeP891YgWSRsLkyi1PByTNLpIqMkeBKD2FNrjpnHRo2wKy5N7VSPf2ZKVcbyc5zAe3HrFmlWbJuv8U0sihysWRlrDgXx6yVy8ZaoRv8OceWsSU6ag5sRdwwvfTqa4Rb1k1mCz8Qm-AsuDHB7PKkK2Cp2CfMT8tN88rr60PRy6QVCXTAMtCeHcwMV1_tESGoTJTyXkU47sjN5vUlNKZLxBrktldE9rwBgFIzGskWH0XZJQMzx5WhLC7cJHJbxENqcfKxzqASevPhYqHq561yUZOlX0',
+    # 'cookie': '__RequestVerificationToken=YIzxYmoaPa5g4HDz9YukyAXGXWbB4Jnr8KqK_FptivM0baHzHCRfFwTOQI5UnaMw-S7EF63ooO8YVjOA50LK3DfVDF04VxNnwx70kiucip01; _lr_hb_-4olzxu%2Fconsignment-portal-beta={%22heartbeat%22:1663959490653}; _lr_uf_-4olzxu=5e8d49f7-d1b2-4b6a-a1d1-dfe201807491; _lr_tabs_-4olzxu%2Fconsignment-portal-beta={%22sessionID%22:0%2C%22recordingID%22:%225-e7b73f7d-90d1-4854-b897-ed10517b9967%22%2C%22lastActivity%22:1663959520406}; .AspNet.ApplicationCookie=tTNvq1g6Vix8CIwPZsPY31WEvY0tUD0TOOfcS3CAJ3B5fTM1OXudBRVzqJDC2nXp0PpVOD5PHjTDdCxEleHiC-SH21gVCr1RhRLQKzkyka86Nhg9ovnPad-Sln4O3p7AbLFalYBOaeJabsPDTJo9t62CHenydQbjFOMyfo85BwcCDgb8rNBPK6g5q319Jt79R4QTQjILSrO-4k5tBUa84Oi-1_NCl6Uh5NjDTXNWzaFhA25v23gtxTDbFg9ysMjvYejsede4RggrJCUDQwdmWmGx7hnU43ov4vZs_0PszTSpxFVioufdzn_6Jl_fhjgA_IDQ_PDt8LHgk1Ha_qzj8_DNHg4z3VNGP8aGh976mdE0crhGRcSRPK-nJ6OuDPNVYJNWAQ3D3HV3RGI9S4l7HblHyupLUmXKCAddkW5J5I7ayLUIlrZXyojDRxlrZGy1yCm3D67llMzIZEoeQkKCL5CVoGs9YyHQWaVw53w1BrG1dCShSM0RcQmBh7VbyNJrFoZ5N0J23aO5wOaydvhEkTbjEDrhWmHo2fg9w4UArR0CPxC5trr0xi1NY-be2bt2dfLHqZQCMbKjV6nP6rBNYP6wcBfHbiNpe6YQFFWISHxc1QoNMYNRGLPTWa0ff6A1Jp-FbqUicKuwBKoM-9hAiPpSfLTLB7bZCyf0JNq6IXlVYa6cawks5YCgFWP1JNli0xkl5KIkwf7x6eAEu6Zw4J0gdrK8vNDeE1Tnxqi2kE4cVh9y-K8yCs2W15J2BZ0aDYmOm6MnPCtrkBUiUGZcV6yLiEkF7CZZ-wEGaXPyd0n3Vv8Z3J6vIAA9gHIURdFX6ugMC2CO6PepWKBI7D9aUeCE667go3bfwvwtZN0hSKZx6LOhVxgIuacMO48eeP4jmqeBrT66FFnYia9X3jK4T6k13qfyxmzo84-du0uOcY07GV_gpyKpN5v47z6Cg3IinpYpwqAAZMztI9jC930_m1yesCBw_UD84nRANh86IsDz9ST7vfCdofJltwu5POq5gmufeytTcbaSG0w0hRVH4R9HpQ9idejUeCDasyqjAaJpuX-2RxsuYvYUIUmzUjp_LdQQWM9R3qj2xVIhcn5iwMhQL-si3ngUu2KkClu2aZc',
     'portal-version': '4.22',
     'referer': 'https://portal.stagefront.com/Pricing',
-    'sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"',
+    'sec-ch-ua': '"Google Chrome";v="105", "Not)A;Brand";v="8", "Chromium";v="105"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'same-origin',
-    'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36',
     'x-requested-with': 'XMLHttpRequest',
 }
 
