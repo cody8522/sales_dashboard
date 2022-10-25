@@ -22,7 +22,7 @@ headers = {
     # Requests sorts cookies= alphabetically
     # 'cookie': '__RequestVerificationToken=mHUM0lpc8_oauGe35xbLc2_4PdfCWmKwJQwi1jGB13PV3HypsONLWhRukfUkAL9yxtA_qcVuz2u1mB7MLY2dxnGg21lnUgwvdu7BHUn304k1; .AspNet.ApplicationCookie=3MO7DeOGIl9v2El3Cf-GlvuVz-bKutXBONqGhNocbghFYRxnu7Gclh9xDbGRUMPPPhPJ0DP_Rvjt7lwozv5tHoUKQyyvyMqM9jQJ_gD7R_RlQTpOGWG58LvFIFK1AIoodfBmvb01185Hwye8fUS21HsBrSEZ1IBCCp8Dv9GElmIlv0HgtXvekiOq7azwECva6mgHk-JgRDn0kcyOPdyyqH5mN3qHpHeyHhqha-Dw2j8sOat35LYC097luUtYJt_DFNjPP4DQaig3dzuHoavOXKUkeRmIcnHjCeaeag_Z_JNXhKH5ZgOBo1lqZ3xpt9KW0yzz2Yua2wnu91onIzHQTJcIkLjqZn3EnVbKqDIDAeF0Gx4TkVAZGvkR9CoB0Bo6yi_5wgGSJ7yKT17l_7p59ewPXXmEG4j_RiRDRuGMYP1Rxso1dZx4uMHyNGKq7XzJjgMYU7JP_9bC1BmoLM8-ut8mxd6GvtgruFk9iYOlmiMPs12QRSZtu2180_d9V4-e_zdzJW7o0wuGTPujs2lgghzYUgCsk-rkIcNOUQHlYh5wejDWPfA-eZ_xd5UxQ35paCQyXf5q7kX7MS23TG1H0cd66iZC1U_77ciMIgMQtEuEoULObdifECxWPnMyFSZf0ADeTzwOLBHXTzk6vENsdeK-ouXpGSp5rMfljuBU5BDjPLRL2li4-EnYch6KGzNlVRJTK463FSZb0uA4Sa1lKzj1dIhH3dSBrX-0NI4p3UW_ep9fIxsrxDph888-UZwOKgb7QIzNlmUbRc1BXmGMo_uxUbxPKe5yU-GYWP9REh5z7pEAfs5SSSdjYuHJuYKDahfzZRwTc9quf22E9nv6XSP7t5jJxGlPfQjwSUNFYKQS6osjCD3mKVY-30jiSYDdN1skFDhJnOvn35MzGiVfu7LAA0i-r0NrgliV1wAfKIO8fRbqCiK96ZO9LLyboOf1NSgqmdXSlXcJatp8dgJOCPhvhil3tL4Mv8a8Hvivq2ddRzYjkYe_9TOuowAs6K2L52rUIQEwrv65TDInWWG0L_fO5ixKAW6gEUCZvFEbQkxV3S0g3bx94kaW_BzUAvylypiVrKuJ6MGmWINFBq69u5sWfZD0LeYdNxWkGlpmcLI',
     'portal-version': '4.22',
-    'referer': 'https://portal.stagefront.com/Pricing',
+    'referer': 'https://portal.stagefront.com/Sales',
     'sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
